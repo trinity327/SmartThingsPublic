@@ -14,7 +14,7 @@
  */
 metadata {
 	definition (name: "Plex", namespace: "trinity327", author: "Jeffrey Purcell", cstHandler: true) {
-		capability "Switch Level"
+		capability "Switch"
 	}
 
 
@@ -30,12 +30,17 @@ metadata {
 // parse events into attributes
 def parse(String description) {
 	log.debug "Parsing '${description}'"
-	// TODO: handle 'level' attribute
+	// TODO: handle 'switch' attribute
 
 }
 
 // handle commands
-def setLevel() {
-	log.debug "Executing 'setLevel'"
-	// TODO: handle 'setLevel' command
+def on() {
+	log.debug "Executing 'on'"
+	// TODO: handle 'on' command
+}
+
+def off() {
+	log.debug "Executing 'off'"
+	// TODO: handle 'off' command
 }
